@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard Morador</title>
+</head>
+<body>
+    <header th:replace="fragments/header :: header"></header>
+    <nav th:replace="fragments/menu :: menu"></nav>
+
+    <h1>Bem-vindo, Morador!</h1>
+    <ul>
+        <li><a th:href="@{/morador/comunicados}">Comunicados</a></li>
+        <li><a th:href="@{/morador/reservas}">Reservas de Áreas Comuns</a></li>
+        <li><a th:href="@{/morador/perfil}">Meu Perfil</a></li>
+    </ul>
+
+    <footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>
